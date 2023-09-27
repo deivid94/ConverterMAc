@@ -18,7 +18,11 @@ export default function App (){
     <AppContainer>
       <GlobalStyle />
       <Titulo>Converter o MAC</Titulo>
-      <InputMac type="text" name="" id="" placeholder="Digite o mac address" />
+      <InputMac 
+      placeholder="Digite o mac address"
+      onBlur={event =>console.log(event.target.value)}
+      />
+      
     </AppContainer>
 
   )
